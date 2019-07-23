@@ -1,0 +1,22 @@
+.TH NOTE 1 "2019 JULY 22"
+.SH NAME
+.B note \- a command line app for taking notes
+.SH SYNOPSIS
+.B note [\-ln] [name]
+.SH DESCRIPTION
+Simple command line app for making and taking notes in markdown.
+.br
+When called without an argument, it will create a note named from the current date
+(i.e. "07-22-2019.md").
+.br
+If the file already exists, it will open it with $EDITOR.
+.SH OPTIONS
+-l        List all existing notes.
+.PP
+-n <name> Create a named note.
+.SH ENVIRONMENT
+.EV
+NOTE_DIR  Directory for storing notes.
+(defaults to "$HOME/notes")
+.SH AUTHOR
+Clay Dunston <dunstontc@gmail.com>
